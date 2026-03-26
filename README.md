@@ -36,11 +36,28 @@ The notebook walks through: network structure → synthetic time series → batt
 
 ### 4. Launch the dashboard
 
-[TODO: once built]
-
 ```bash
 streamlit run app/main.py
 ```
+
+#### Or run in Docker
+
+The Docker image bakes in the pre-computed scenarios, so the reviewer does not need to run the precompute step.
+
+**Prerequisites:**
+
+1. Install [Docker Desktop](https://www.docker.com/products/docker-desktop/)
+2. Install the Compose plugin: `brew install docker-compose`
+3. Open Docker Desktop and wait for the whale icon in the menu bar to stop animating before running any `docker` commands
+
+```bash
+docker-compose up --build
+```
+
+Then open [http://localhost:8501](http://localhost:8501).
+
+> **Note:** `data/scenarios.parquet` must exist before running `docker build`
+> (i.e. run step 2 first). The file is gitignored but is copied into the image.
 
 ---
 
@@ -104,8 +121,7 @@ The 64 tieline scenarios are **pre-computed** because each requires a full re-so
 
 ---
 
-## [TODO] Further development
+## Further development
 
-- Docker / reproducibility instructions
 - Sensitivity analysis (battery cost trajectories, demand growth)
 - AC load flow / network constraints
