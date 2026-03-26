@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "electronic-union"
+version = "0.1.0"
+description = "Battery storage investment model for a fictional five-country power system"
+requires-python = ">=3.11"
+dependencies = [
+    "pypsa>=1.1",
+    "linopy>=0.6",
+    "highspy>=1.13",
+    "pandas>=2.0",
+    "numpy>=2.0",
+    "matplotlib>=3.8",
+    "pyarrow>=14.0",
+    "streamlit>=1.35",
+    "tqdm>=4.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "jupyter>=1.0",
+    "notebook>=7.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["electronic_union*"]
