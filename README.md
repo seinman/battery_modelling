@@ -1,8 +1,10 @@
 # Electronic Union — Battery Storage Investment Model
 
-[TODO: one-paragraph description of the project for the job application context]
+Welcome to the Electronic Union - an alliance of five states with diverse natural resources that have had historically distinct approaches to electricity generation: Coalland, the Gaseous Isles, Windtopia, the Solar Peninsula and the Nuclear Republic.
 
-A PyPSA-based power system model for a fictional five-country union, built to explore how transmission interconnection affects optimal battery storage investment. The optimiser (HiGHS via Linopy) sizes battery capacity at each candidate site to minimise total annual system cost across all countries.
+The Federal Energy Authority of the Electronic Union is considering how to unify the countries' electricity grids in the face of rising CO2e prices.
+
+It has two weapons at its disposal: building new connections between the member states, and building additional storage capacity. In order to understand what its best options are, the FEA's developers have built a dashboard using PyPSA to explore how total cost varies with infrastructure decisions and carbon price. 
 
 ---
 
@@ -99,7 +101,6 @@ The 64 tieline scenarios are **pre-computed** because each requires a full re-so
 - Transmission is modelled as lossless DC links (no AC power flow)
 - All parameters are fictional, calibrated loosely on North-West European climatology
 - Demand response, hydro, and hydrogen are not modelled
-- [TODO: anything else worth flagging]
 
 ---
 
