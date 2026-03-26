@@ -1,6 +1,6 @@
 # Electronic Union — Battery Storage Investment Model
 
-Welcome to the Electronic Union - an alliance of five states with diverse natural resources that have had historically distinct approaches to electricity generation: Coalland, the Gaseous Isles, Windtopia, the Solar Peninsula and the Nuclear Republic.
+Welcome to the Electronic Union - an alliance of five states with historically distinct approaches to electricity generation: Coalland, the Gaseous Isles, Windtopia, the Solar Peninsula and the Nuclear Republic.
 
 The Federal Energy Authority of the Electronic Union is considering how to unify the countries' electricity grids in the face of rising CO2e prices.
 
